@@ -1,0 +1,19 @@
+{
+  "name": "testvite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rrosen326@gmail.com",
+  "license": "ISC",
+  "workspaces": [
+    "shared_lib",
+    "frontend",
+    "node_proj"
+  ],
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

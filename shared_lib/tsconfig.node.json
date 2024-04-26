@@ -1,0 +1,15 @@
+{
+    "extends": "../tsconfig.json",
+    "files": [
+        // Only include files for node
+        "./src/shared.ts",
+        "./src/nodeOnly.ts",
+        "./src/index_node.ts"
+    ],    
+    "compilerOptions": {
+        "composite": true,
+        "rootDir": "./src",
+        "outDir": "./dist_node",
+        "lib": ["ES2022"],
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist_node",
+        "lib": ["ES2022"],
+    },
+    "references": [
+        // tsc --build will automatically build referenced projects
+        { "path": "../shared_lib/tsconfig.node.json" } 
+    ]
+}

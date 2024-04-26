@@ -1,0 +1,13 @@
+{
+  "name": "node_proj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rrosen326@gmail.com",
+  "license": "ISC",
+  "description": ""
+}

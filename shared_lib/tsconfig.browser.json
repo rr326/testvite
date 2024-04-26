@@ -1,0 +1,16 @@
+{
+    "extends": "../tsconfig.json",
+    "files": [
+        // Only include files for node
+        "./src/shared.ts",
+        "./src/browserOnly.ts",
+        "./src/index_browser.ts"
+    ],      
+    "compilerOptions": {
+        "composite": true,
+        "rootDir": "./src",
+        "outDir": "./dist_browser",
+        "lib": ["ES2022", "DOM"],
+
+    }
+}

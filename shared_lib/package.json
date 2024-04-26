@@ -1,0 +1,22 @@
+{
+  "name": "shared_lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./dist_node/index_node.js",
+    "./dist_node/*": "./dist_node/*",
+    "./dist_browser/*": "./dist_browser/*"
+  },
+  "scripts": {
+    "build:node": "tsc --build tsconfig.node.json",
+    "build:browser": "tsc --build tsconfig.browser.json",
+    "build": "npm run build:node ; npm run build:browser",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rrosen326@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+  }
+}
